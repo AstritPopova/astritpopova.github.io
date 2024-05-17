@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jalkapallo</title>
+    <style>
+
+h1 {
+            color: #faf8f8;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav-main {
+            background-color: rgba(26, 26, 46, 0.8);
+            color: #e94560;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .nav-main a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-main a:hover {
+            color: red;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+            margin: 20px;
+            width: 80%;
+        }
+
+        .images-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .image-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+            padding: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .image-item h5 {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .image-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .image-item a {
+            color: #e94560;
+            text-decoration: none;
+        }
+
+        .image-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content-container">
+        <h1>Jalkapallo</h1>
+        <nav class="nav-main">
+            <a href="index.html">Etusivu</a>
+            <a href="second.html">Profiilit</a>
+            <a href="third.html">Haastattelut</a>
+            <a href="fourth.html">Joukkue-esittelyt</a>
+            <a href="fifth.html">Videot</a>
+            <a href="sixth.html">Tilastot</a>
+        </nav>
+        <div class="content">
+            <h2>Tervetuloa Jalkapallo-sivustolle! Täältä löydät ajankohtaisimmat uutiset jalkapallon maailmasta, tiedot tulevista otteluista ja tapahtumista sekä parhaiden maalintekijöiden esittelyt.</h2>
+        </div>
+        <div class="images-container">
+            <div class="image-item">
+                <img src="Euro 2024.jpg" alt="Euro 2024">
+                <h5>Jalkapallon EM-kisoihin mullistava sääntömuutos. Tästä nousee kortti herkästi</h5>
+                <p>Erotuomarijohtaja Roberto Rosettin mukaan jokainen pelaaja, kapteeni pois lukien, joka lähestyy EM-kisoissa tuomaria epäkunnioittavaan tai vastustavaan sävyyn, saa toiminnastaan varoituksen.</p>
+                <a href="https://www.mtvuutiset.fi/artikkeli/jalkapallon-em-kisoihin-mullistava-saantomuutos-tasta-nousee-kortti-herkasti/8938008#gs.8war85">Euro 2024</a>
+            </div>
+            <div class="image-item">
+                <img src="man city.jpg" alt="Manchester City">
+                <h5>Erling Haaland nosti Cityn kiinni mestaruuteen – Tottenham-faneille maistuva tappio</h5>
+                <p>Manchester City tarrasi kiinni jalkapallon Englannin Valioliigan mestaruuteen 2–0-vierasvoitolla Tottenhamista. City lähtee päätöskierrokselle kahden pisteen etumatkalla Arsenaliin.</p>
+                <a href="https://www.mtvuutiset.fi/artikkeli/erling-haaland-nosti-cityn-kiinni-mestaruuteen-tottenham-faneille-maistuva-tappio/8938140#gs.8w9rho">Man City</a>
+            </div>
+            <div class="images-container">
+               <div class="image-item">
+                <img src="Kylian-Mbappe-TT.avif" alt="Mappen hyvästelyt">
+                <h5>Kylian Mbappé julkaisi jäähyväisvideon – seura yllättyi supertähtensä ulostulosta</h5>
+                <p>Jalkapallon megatähti Kylian Mbappé, 25, vahvisti perjantaina sosiaalisen median tileillään jättävänsä Pariisin mahtiseuran PSG:n.
+
+                    – Tämä on viimeinen kauteni. En jatka joukkueessa. Tämä seikkailu päättyy osaltani muutaman viikon sisällä.
+                    PSG:n kanssa viisi kertaa Ranskan mestaruutta juhlinut Mbappé on PSG:n kaikkien aikojen paras maalintekijä 255 maalillaan.</p>
+                <a href="https://yle.fi/a/74-20088160">Mbappen hyvästelyt</a>
+               </div>
+             
+           
+    </div>
+</body>
+</html>
